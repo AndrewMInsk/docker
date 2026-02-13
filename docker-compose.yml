@@ -1,0 +1,11 @@
+version: "3"
+
+
+services:
+  nginx2:
+    image: nginx:latest
+    ports:
+      - "8876:80"
+    environment:
+      - NGINX_HOST=foobar.com
+      - NGINX_PORT=80
